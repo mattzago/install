@@ -6,6 +6,8 @@ HOMEBREW_PREFIX = '/usr/local'
 HOMEBREW_CACHE = '/Library/Caches/Homebrew'
 HOMEBREW_REPO = 'https://github.com/mattzago/homebrew'
 
+File.umask(0002)
+
 module Tty extend self
   def blue; bold 34; end
   def white; bold 39; end
